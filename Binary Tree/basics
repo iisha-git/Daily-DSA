@@ -1,0 +1,17 @@
+Tree : hierarchial data structure
+
+binary trees : max children =2
+
+*levels and subtree
+ 1st node = level 1
+ depth
+ subtrees
+
+*concepts
+ children
+ Leaves : node with no children/subtree
+ level of any node
+ subtrees
+ ancestors : parents of that node
+
+

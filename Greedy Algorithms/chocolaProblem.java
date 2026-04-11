@@ -1,7 +1,6 @@
 import java.util.*;
 public class chocolaProblem{
     public static void main(String[] args) {
-        int horLen = 4 , verLen = 6;
         Integer costVer[] = {2,1,3,1,4};
         Integer costHor[] = {4,1,2}; 
 
@@ -9,10 +8,10 @@ public class chocolaProblem{
         Arrays.sort(costHor,Collections.reverseOrder());
 
         int h = 0, v =0;
-        int hp = 1 , vp=1n ;
+        int hp = 1 , vp=1 ;
         int cost = 0;
 
-        while (h<horLen && v<verLen) {
+        while (h<costHor.length && v<costVer.length) {
             if(costVer[v]<=costHor[h]){
                 cost+=(costHor[h]*vp);
                 h++;
@@ -29,8 +28,8 @@ public class chocolaProblem{
             hp++;
             h++;
         }
-        while(v<costHor.length){
-            cost+=(costHor[v]*hp);
+        while(v<costVer.length){
+            cost+=(costVer[v]*hp);
             vp++;
             v++;
         }
