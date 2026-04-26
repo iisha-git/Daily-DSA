@@ -1,13 +1,14 @@
 package BinarySearchTree;
 
-public class BuiltBST {
+public class SearchBST {
     static class Node{
         int data;
         Node left;
         Node right;
         Node(int data){
             this.data = data;
-            
+            this.left=null;
+            this.right=null;
         }
     }
 
@@ -26,13 +27,21 @@ public class BuiltBST {
         return root;
     }
 
-    public static void inorder(Node root){
+    public static boolean search(Node root , int key){
         if(root==null){
-            return;
+            return false;
         }
-        inorder(root.left);
-        System.out.print(root.data+" ");
-        inorder(root.right);
+        if(root.data==key){
+            return true;
+        }
+        if(root.data>key){
+            return search(root.left, key);
+        }
+
+        else{
+            return search(root.right, key);
+        }
+
     }
 
     public static void main(String[] args) {
@@ -43,8 +52,11 @@ public class BuiltBST {
             root = insert(root, values[i]);
         }
 
-        inorder(root);
-    }
+        if(search(root, 1)){
+            System.out.println("found");
+        }else{
+            System.out.println("nf");
+        }
 
+    }
 }
- 
