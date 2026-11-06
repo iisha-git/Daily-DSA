@@ -1,7 +1,7 @@
 package Final450.sortingSearching;
 import java.util.*;
 
-class Solution {
+class majorityElement {
     int majorityElement(int arr[]) {
         // code here
         HashMap<Integer, Integer> map = new HashMap<>();

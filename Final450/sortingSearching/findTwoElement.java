@@ -1,7 +1,7 @@
 package Final450.sortingSearching;
 import java.util.*;
 
-class Solution {
+class findTwoElement {
     ArrayList<Integer> findTwoElement(int arr[]) {
         // code here
         ArrayList<Integer> result = new ArrayList<>();
