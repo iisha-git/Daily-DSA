@@ -11,6 +11,9 @@ Every solution file contains a comment header with the original problem link
 - Build strong problem-solving habits through daily practice.
 - Keep clean, readable reference implementations with explanations.
 - Connect each solution to the original problem statement for easy revision.
+- Combine everything at one place: for every question the learner should not
+  have to roam around, so the problem link, approach and code live together —
+  built up while practicing too.
 
 ---
 
