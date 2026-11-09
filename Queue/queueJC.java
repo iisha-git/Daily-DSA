@@ -1,3 +1,12 @@
+/*
+ * Topic : Queue using the Java Collection Framework
+ * GFG   : https://www.geeksforgeeks.org/queue-interface-java/
+ *
+ * Notes:
+ * The Queue interface is implemented by LinkedList and ArrayDeque.
+ * add()/offer() enqueue, remove()/poll() dequeue, and peek()/element() read the
+ * front. This example uses ArrayDeque, which is generally the fastest choice.
+ */
 //package Queue;
 
 import java.util.*;

@@ -1,3 +1,14 @@
+/*
+ * Problem : Implement a Queue using a Linked List
+ * GFG     : https://www.geeksforgeeks.org/queue-linked-list-implementation/
+ *
+ * Approach:
+ * Keep head (front) and tail (rear) pointers. add() inserts at the tail and
+ * remove() deletes the head. An empty queue has both pointers null. All
+ * operations take O(1) time.
+ *
+ * Time : O(1) per operation | Space : O(n)
+ */
 package Queue;
 
 //import java.util.Queue;

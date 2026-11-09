@@ -1,3 +1,12 @@
+/*
+ * Topic : Deque (Double Ended Queue) in Java
+ * GFG   : https://www.geeksforgeeks.org/deque-interface-java-example/
+ *
+ * Notes:
+ * A Deque allows insertion and deletion at both ends. addFirst / addLast add,
+ * removeFirst / removeLast remove, and getFirst / getLast read the ends. This
+ * example uses LinkedList as the Deque implementation.
+ */
 package Queue;
 
 import java.util.*;

@@ -1,3 +1,22 @@
+/*
+ * Problem : Container With Most Water
+ * LeetCode: https://leetcode.com/problems/container-with-most-water/
+ * GFG     : https://www.geeksforgeeks.org/container-with-most-water/
+ *
+ * Approach in this file (brute force):
+ * Try every pair of lines (i, j). The water stored is
+ * min(height[i], height[j]) * (j - i). Track the maximum over all pairs.
+ *
+ * Optimal approach (two pointers, O(n)):
+ * Start with the widest container (lp = 0, rp = n - 1). The area is limited by
+ * the shorter line, so move the shorter pointer inward; moving the taller one
+ * can never increase the area.
+ *
+ * Current time : O(n^2) | Space : O(1)
+ *
+ * Note: the code computes Math.min(i, j) instead of
+ * Math.min(height.get(i), height.get(j)), so it compares indices, not heights.
+ */
 import java.util.ArrayList;
 
 public class storWater{

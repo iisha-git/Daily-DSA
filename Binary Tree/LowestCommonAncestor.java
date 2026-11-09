@@ -1,3 +1,14 @@
+/*
+ * Problem : Lowest Common Ancestor of a Binary Tree (path approach)
+ * LeetCode: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * GFG     : https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+ *
+ * Approach:
+ * 1. Store the root-to-node path for n1 and n2 using getPath().
+ * 2. Walk both paths together until they differ; the last common node is the LCA.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 import java.util.ArrayList;
 
 public class LowestCommonAncestor {

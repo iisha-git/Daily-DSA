@@ -1,3 +1,16 @@
+/*
+ * Problem : Diameter of a Binary Tree (optimized, one pass)
+ * LeetCode: https://leetcode.com/problems/diameter-of-binary-tree/
+ * GFG     : https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+ *
+ * Approach:
+ * A post-order DFS returns both the height and the diameter of every subtree in
+ * one pass. The diameter through the current node is
+ * leftHeight + rightHeight + 1, and the overall diameter is the maximum of the
+ * left diameter, the right diameter and the diameter through the current node.
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class widthTree {
     static class Node{
         int data;

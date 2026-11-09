@@ -1,3 +1,21 @@
+/*
+ * Problems:
+ * - Convert Sorted Array to Balanced BST
+ *   LeetCode: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+ *   GFG     : https://www.geeksforgeeks.org/sorted-array-to-balanced-bst/
+ * - Balance a Binary Search Tree
+ *   LeetCode: https://leetcode.com/problems/balance-a-binary-search-tree/
+ *   GFG     : https://www.geeksforgeeks.org/normal-bst-to-balanced-bst/
+ *
+ * Approach:
+ * - createBST: the middle element of a sorted array becomes the root, so the left
+ *   and right halves recursively form balanced left and right subtrees.
+ * - balanceBST: collect the values with an inorder traversal (which is sorted),
+ *   then rebuild a balanced BST from that sorted list using the same middle
+ *   element strategy.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 import java.util.*;
 
 public class ArrayBST {

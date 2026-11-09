@@ -1,3 +1,17 @@
+/*
+ * Problem : Pair with given sum in a sorted list (Two Sum II)
+ * LeetCode: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * GFG     : https://www.geeksforgeeks.org/two-pointers-technique/
+ *
+ * Approach (two pointers, O(n)):
+ * Keep one pointer at the start (lp) and one at the end (rp) of the sorted list.
+ * - If list[lp] + list[rp] == target, a valid pair is found.
+ * - If the sum is smaller than the target, move lp right to increase the sum.
+ * - If the sum is larger than the target, move rp left to decrease the sum.
+ * The list must be sorted for this technique to work.
+ *
+ * Time : O(n) | Space : O(1)
+ */
 import java.util.ArrayList;
 
 public class PairSum {

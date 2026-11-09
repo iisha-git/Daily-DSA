@@ -1,3 +1,15 @@
+/*
+ * Problem : Maximum Length Chain of Pairs
+ * LeetCode: https://leetcode.com/problems/maximum-length-of-pair-chain/
+ * GFG     : https://www.geeksforgeeks.org/maximum-length-chain-of-pairs-dp-20/
+ *
+ * Approach (greedy):
+ * Sort the pairs by their second value. Start with the first pair, then extend the
+ * chain whenever the current pair's first value is greater than the last chosen
+ * pair's second value. This is the same idea as the Activity Selection problem.
+ *
+ * Time : O(n log n) | Space : O(1)
+ */
 import java.util.*;
 
 public class longestChairPair {

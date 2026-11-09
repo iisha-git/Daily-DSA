@@ -1,3 +1,16 @@
+/*
+ * Problem : Design Circular Queue / Queue using Array
+ * LeetCode: https://leetcode.com/problems/design-circular-queue/
+ * GFG     : https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/
+ *
+ * Approach:
+ * Keep front and rear indices in a fixed-size array. add() moves rear forward
+ * circularly and remove() moves front forward circularly. The queue is full when
+ * (rear + 1) % size == front and empty when both indices are -1. Using modulo
+ * keeps the array circular and reuses freed space.
+ *
+ * Time : O(1) per operation | Space : O(n)
+ */
 package Queue;
 
 public class queueArray {

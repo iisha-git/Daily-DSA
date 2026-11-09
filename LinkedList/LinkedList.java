@@ -1,3 +1,24 @@
+/*
+ * Problems demonstrated:
+ * - Reverse a Linked List
+ *   LeetCode: https://leetcode.com/problems/reverse-linked-list/
+ *   GFG     : https://www.geeksforgeeks.org/reverse-a-linked-list/
+ * - Remove Nth Node From End of List
+ *   LeetCode: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+ *   GFG     : https://www.geeksforgeeks.org/delete-nth-node-from-the-end-of-the-given-linked-list/
+ * - Palindrome Linked List
+ *   LeetCode: https://leetcode.com/problems/palindrome-linked-list/
+ *   GFG     : https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/
+ *
+ * Approach:
+ * - reverse: iterative three-pointer reversal (prev, curr, next).
+ * - deleteNthfromEnd: count the size, walk to the node before the target and
+ *   unlink the target.
+ * - checkPalindrome: find the middle with slow/fast pointers, reverse the second
+ *   half, then compare the two halves.
+ *
+ * Time : O(n) per operation | Space : O(1)
+ */
 package LinkedList;
 
 public class LinkedList {

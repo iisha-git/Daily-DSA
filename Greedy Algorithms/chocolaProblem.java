@@ -1,3 +1,15 @@
+/*
+ * Problem : Minimum cost to cut a chocolate/board into squares
+ * GFG     : https://www.geeksforgeeks.org/minimum-cost-cut-board-squares/
+ *
+ * Approach (greedy):
+ * Sort the horizontal and vertical cut costs in descending order. Every cut is
+ * multiplied by the number of pieces currently in the perpendicular direction.
+ * Always make the more expensive cut first while there are pieces to multiply,
+ * because the number of pieces only increases.
+ *
+ * Time : O(n log n + m log m) | Space : O(1)
+ */
 import java.util.*;
 public class chocolaProblem{
     public static void main(String[] args) {

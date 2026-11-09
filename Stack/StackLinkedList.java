@@ -1,3 +1,13 @@
+/*
+ * Problem : Implement Stack using Linked List
+ * GFG     : https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/
+ *
+ * Approach:
+ * The head of the linked list is the top of the stack. push() inserts a new node
+ * at the head, pop() removes the head and peek() returns the head's data.
+ *
+ * Time : O(1) per operation | Space : O(n)
+ */
 package Stack;
 
 public class StackLinkedList {

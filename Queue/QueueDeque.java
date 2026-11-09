@@ -1,3 +1,13 @@
+/*
+ * Problem : Implement a Queue using Deque
+ * GFG     : https://www.geeksforgeeks.org/implement-queue-using-deque-in-java/
+ *
+ * Approach:
+ * A queue can be built on top of a Deque by always adding at the rear (addLast)
+ * and removing/peeking from the front (removeFirst / getFirst).
+ *
+ * Time : O(1) per operation | Space : O(n)
+ */
 package Queue;
 import java.util.*;
 

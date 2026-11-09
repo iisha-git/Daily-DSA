@@ -1,3 +1,25 @@
+/*
+ * Problem : Delete Node in a BST
+ * LeetCode: https://leetcode.com/problems/delete-node-in-a-bst/
+ * GFG     : https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+ *
+ * Related problems also implemented here:
+ * - Validate Binary Search Tree
+ *   https://leetcode.com/problems/validate-binary-search-tree/
+ * - Print all root-to-leaf paths
+ *   https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/
+ *
+ * Approach (delete):
+ * 1. Search the node using BST ordering.
+ * 2. No left child -> return its right child; no right child -> return left.
+ * 3. Both children -> replace the value with the inorder successor (left-most
+ *    node of the right subtree) and delete that successor.
+ *
+ * isValidBST: pass a valid (min, max) range down the recursion.
+ * printRoot2Leaf: DFS while keeping the current path in an ArrayList.
+ *
+ * Time : O(h) | Space : O(h)
+ */
 package BinarySearchTree;
 
 import java.util.ArrayList;

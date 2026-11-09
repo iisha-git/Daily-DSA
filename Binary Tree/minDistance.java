@@ -1,3 +1,14 @@
+/*
+ * Problem : Minimum distance between two nodes of a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+ *
+ * Approach:
+ * 1. Find the LCA of the two nodes.
+ * 2. Find the distance of each node from the LCA (number of edges).
+ * 3. The answer is dist(node1, LCA) + dist(node2, LCA).
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class minDistance {
     static class Node{
         int data;

@@ -1,3 +1,15 @@
+/*
+ * Problem : Top View of a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+ *
+ * Approach:
+ * BFS while tracking a horizontal distance (hd) for every node, starting at 0
+ * for the root. The first node seen for any horizontal distance is the top-most
+ * node of that column, so store it in a HashMap<hd, Node>. Finally print the map
+ * from the minimum hd to the maximum hd.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 import java.util.*;
 
 public class topView {

@@ -1,3 +1,16 @@
+/*
+ * Problem : Find Missing And Repeating
+ * GFG     : https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/
+ * Related : https://leetcode.com/problems/set-mismatch/
+ *
+ * Approach:
+ * 1. Insert every element into a HashSet. If add() returns false, that value is
+ *    the repeating number.
+ * 2. Iterate from 1 to n and find the value that is missing from the set.
+ * Return [repeating, missing].
+ *
+ * Time : O(n) | Space : O(n)
+ */
 package Final450.sortingSearching;
 import java.util.*;
 

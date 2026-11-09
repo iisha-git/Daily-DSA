@@ -1,3 +1,18 @@
+/*
+ * Problem : Maximum Depth of Binary Tree / Diameter of Binary Tree
+ * LeetCode: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * LeetCode: https://leetcode.com/problems/diameter-of-binary-tree/
+ * GFG     : https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+ *
+ * Approach:
+ * - height: 1 + max(height(left), height(right)).
+ * - diameter: the longest path through a node is leftHeight + rightHeight + 1;
+ *   the answer is the maximum over all nodes.
+ * This file recomputes height at every node (O(n^2)); it can be optimized to
+ * O(n) by returning height and diameter together (see widthTree.java).
+ *
+ * Time : O(n^2) for the current diameter | Space : O(h)
+ */
 public class heightTree {
     static class Node{
         int data;

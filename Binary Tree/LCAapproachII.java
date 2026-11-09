@@ -1,3 +1,15 @@
+/*
+ * Problem : Lowest Common Ancestor of a Binary Tree
+ * LeetCode: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * GFG     : https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+ *
+ * Approach (single traversal):
+ * Recursively search both subtrees. If the current node is null or matches n1/n2,
+ * return it. If both recursive calls return a non-null node, the current node is
+ * the LCA. Otherwise return whichever result is non-null.
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class LCAapproachII {
     static class Node{
         int data;

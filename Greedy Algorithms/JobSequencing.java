@@ -1,3 +1,15 @@
+/*
+ * Problem : Job Sequencing Problem
+ * GFG     : https://www.geeksforgeeks.org/job-sequencing-problem/
+ *
+ * Approach (greedy):
+ * Sort the jobs by profit in descending order. Schedule each job in the latest
+ * free slot before its deadline; if a slot is available, add it to the sequence
+ * and increase the time. Choosing the most profitable job first gives the maximum
+ * total profit when every job takes one unit of time.
+ *
+ * Time : O(n log n) | Space : O(n)
+ */
 import java.util.*;
 
 public class JobSequencing{

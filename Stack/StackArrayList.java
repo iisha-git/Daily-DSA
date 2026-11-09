@@ -1,3 +1,14 @@
+/*
+ * Problem : Implement Stack using ArrayList
+ * GFG     : https://www.geeksforgeeks.org/how-to-implement-stack-in-java-using-arraylist/
+ *
+ * Approach:
+ * Use an ArrayList as the underlying storage. push adds to the end, pop removes
+ * the last element and peek returns the last element. The end of the list acts as
+ * the top of the stack.
+ *
+ * Time : O(1) per operation (amortized) | Space : O(n)
+ */
 package Stack;
 
 import java.util.ArrayList;

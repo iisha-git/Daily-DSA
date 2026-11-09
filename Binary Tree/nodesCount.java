@@ -1,3 +1,14 @@
+/*
+ * Problem : Count the number of nodes in a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/count-number-of-nodes-in-a-binary-tree/
+ * Related : https://leetcode.com/problems/count-complete-tree-nodes/
+ *
+ * Approach:
+ * Recursively count the nodes in the left and right subtrees and add 1 for the
+ * current node.
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class nodesCount {
     //O(n)
 

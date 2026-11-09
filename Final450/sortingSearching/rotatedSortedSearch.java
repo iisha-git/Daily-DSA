@@ -1,3 +1,17 @@
+/*
+ * Problem : Search in Rotated Sorted Array
+ * LeetCode: https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * GFG     : https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+ *
+ * Approach (modified binary search):
+ * At every step at least one half of the array is sorted.
+ * - If nums[low] <= nums[mid], the left half is sorted; check whether the
+ *   target lies in [nums[low], nums[mid]) and move the bounds accordingly.
+ * - Otherwise the right half is sorted; check whether the target lies in
+ *   (nums[mid], nums[high]] and move the bounds accordingly.
+ *
+ * Time : O(log n) | Space : O(1)
+ */
 package Final450.sortingSearching;
 
 class rotatedSortedSearch {

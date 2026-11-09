@@ -1,3 +1,15 @@
+/*
+ * Problem : Implement Queue using Stacks (costly enqueue)
+ * LeetCode: https://leetcode.com/problems/implement-queue-using-stacks/
+ * GFG     : https://www.geeksforgeeks.org/queue-using-stacks/
+ *
+ * Approach:
+ * Keep the newest element at the bottom of s1 so that s1 behaves like a queue.
+ * On add, move everything from s1 to s2, push the new element onto s1, then move
+ * everything back from s2 to s1. remove and peek then simply use s1's top.
+ *
+ * Time : add O(n), remove/peek O(1) | Space : O(n)
+ */
 package Queue;
 
 import java.util.*;

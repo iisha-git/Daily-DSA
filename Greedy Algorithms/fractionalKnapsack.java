@@ -1,3 +1,15 @@
+/*
+ * Problem : Fractional Knapsack
+ * GFG     : https://www.geeksforgeeks.org/fractional-knapsack-problem/
+ *
+ * Approach (greedy):
+ * Compute the value/weight ratio of every item, sort the items by ratio in
+ * descending order and keep taking items while capacity allows. When an item does
+ * not fit completely, take the fraction that fits. This greedy choice is optimal
+ * for the fractional version of knapsack.
+ *
+ * Time : O(n log n) | Space : O(n)
+ */
 
 import java.util.*;
 

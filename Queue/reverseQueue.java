@@ -1,3 +1,13 @@
+/*
+ * Problem : Reverse a Queue
+ * GFG     : https://www.geeksforgeeks.org/reversing-a-queue/
+ *
+ * Approach:
+ * Pop all elements from the queue into a stack, then pop the stack back into the
+ * queue. The stack's LIFO order reverses the queue's FIFO order.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 package Queue;
 import java.util.*;
 

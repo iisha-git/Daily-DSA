@@ -1,3 +1,16 @@
+/*
+ * Problem : Print all nodes at the K-th level of a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/print-all-nodes-at-distance-k-from-root/
+ * Related : https://leetcode.com/problems/binary-tree-level-order-traversal/
+ *
+ * Approach:
+ * - iterativeApproach: BFS with a Queue and null level markers; print the node
+ *   when the current level equals k.
+ * - recursiveApproach: DFS while carrying the current level; when level == k,
+ *   print the node and stop going deeper.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 import java.util.*;
 
 public class kthLevel {

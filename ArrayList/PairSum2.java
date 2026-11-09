@@ -1,3 +1,22 @@
+/*
+ * Problem : Pair with given sum in a sorted and rotated list
+ * GFG     : https://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-a-sorted-and-rotated-array/
+ *
+ * Approach:
+ * 1. Find the pivot (the largest element where the rotation happens) at index i
+ *    where list[i] > list[i + 1].
+ * 2. The smallest element is at (pivot + 1) and the largest is at pivot.
+ * 3. Apply the two-pointer technique circularly using modulo n:
+ *       lp = (lp + 1) % n
+ *       rp = (n + rp - 1) % n
+ *    and compare the sum of both pointers with the target.
+ *
+ * Time : O(n) | Space : O(1)
+ *
+ * Note: In this file the two-pointer logic sits inside the pivot-search loop,
+ * so it only runs until the pivot is found. The pointer search should run after
+ * the pivot has been located. Left unchanged to preserve the original code.
+ */
 import java.util.ArrayList;
 
 public class PairSum2 {

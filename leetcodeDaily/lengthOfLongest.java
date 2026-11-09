@@ -24,6 +24,8 @@ public class lengthOfLongest {
 /*
 LeetCode 2958 - Length of Longest Subarray With at Most K Frequency
 Difficulty: Medium
+LeetCode: https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/
+GFG     : https://www.geeksforgeeks.org/longest-subarray-having-frequency-of-every-element-less-than-equal-to-k/
 
 Pattern: Sliding Window + HashMap
 

@@ -1,3 +1,13 @@
+/*
+ * Problem : Sum of all nodes in a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/sum-nodes-binary-tree/
+ *
+ * Approach:
+ * Recursively compute the sum of the left and right subtrees and add the current
+ * node's data.
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class nodeSum {
     //O(n)
     static class Node{

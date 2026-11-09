@@ -1,3 +1,20 @@
+/*
+ * Problem : Largest BST in a Binary Tree
+ * GFG     : https://www.geeksforgeeks.org/largest-bst-binary-tree-set-2/
+ * Related : https://leetcode.com/problems/largest-bst-subtree/
+ *
+ * Approach:
+ * A post-order DFS returns an Info object for every subtree containing:
+ * - isBST : whether the subtree is a valid BST
+ * - size  : number of nodes in the subtree
+ * - min   : minimum value in the subtree
+ * - max   : maximum value in the subtree
+ * A subtree is a BST if both children are BSTs and
+ * left.max < root.data < right.min. The answer is the maximum size among all
+ * valid BST subtrees. (The implementation in this file is incomplete.)
+ *
+ * Time : O(n) | Space : O(h)
+ */
 public class SizeofLagrestBT {
     static class Node{
         int data;

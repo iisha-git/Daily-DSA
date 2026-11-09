@@ -1,3 +1,11 @@
+/*
+ * Topic : Stack using the Java Collection Framework
+ * GFG   : https://www.geeksforgeeks.org/stack-class-in-java/
+ *
+ * Notes:
+ * java.util.Stack is a legacy LIFO class. push() adds, pop() removes and peek()
+ * reads the top. For new code, Deque (ArrayDeque) is usually preferred.
+ */
 package Stack;
 import java.util.*;
 

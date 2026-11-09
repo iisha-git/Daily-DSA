@@ -1,3 +1,15 @@
+/*
+ * Problem : Search in a Binary Search Tree
+ * LeetCode: https://leetcode.com/problems/search-in-a-binary-search-tree/
+ * GFG     : https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+ *
+ * Approach:
+ * Compare the key with the current node: if equal return true, if smaller recurse
+ * into the left subtree, otherwise recurse into the right subtree. Reaching null
+ * means the key is not present.
+ *
+ * Time : O(h) | Space : O(h)
+ */
 package BinarySearchTree;
 
 public class SearchBST {

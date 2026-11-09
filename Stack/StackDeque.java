@@ -1,3 +1,13 @@
+/*
+ * Problem : Implement Stack using Deque
+ * GFG     : https://www.geeksforgeeks.org/implement-stack-using-deque-in-java/
+ *
+ * Approach:
+ * Treat one end of the Deque as the top. push() uses addLast, pop() uses
+ * removeLast and peek() uses getLast, which gives LIFO behaviour.
+ *
+ * Time : O(1) per operation | Space : O(n)
+ */
 package Stack;
 
 import java.util.*;

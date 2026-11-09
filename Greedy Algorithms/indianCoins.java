@@ -1,3 +1,15 @@
+/*
+ * Problem : Minimum number of coins (Indian coin system)
+ * GFG     : https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
+ * Related : https://leetcode.com/problems/coin-change/
+ *
+ * Approach (greedy):
+ * Sort the denominations in descending order and keep using the largest coin that
+ * is <= the remaining amount. This works for the Indian currency system because
+ * its denominations form a canonical coin system.
+ *
+ * Time : O(n log n + amount) | Space : O(amount)
+ */
 import java.util.*;
 
 public class indianCoins {

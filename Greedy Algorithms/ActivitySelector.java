@@ -1,3 +1,15 @@
+/*
+ * Problem : Activity Selection Problem
+ * GFG     : https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/
+ * Related : https://leetcode.com/problems/non-overlapping-intervals/
+ *
+ * Approach (greedy):
+ * Sort the activities by their end time. Pick the first activity, then keep
+ * picking every activity whose start time is >= the end time of the last selected
+ * activity. This always yields the maximum number of non-overlapping activities.
+ *
+ * Time : O(n log n) | Space : O(n)
+ */
 import java.util.*;
 
 public class ActivitySelector {

@@ -1,3 +1,15 @@
+/*
+ * Problem : Insert into a Binary Search Tree / Build a BST
+ * LeetCode: https://leetcode.com/problems/insert-into-a-binary-search-tree/
+ * GFG     : https://www.geeksforgeeks.org/insertion-in-binary-search-tree/
+ *
+ * Approach:
+ * Recursively insert each value. If the current node is null, create a new node.
+ * If val < node.data go left, otherwise go right. An inorder traversal of the
+ * resulting tree prints the values in sorted order.
+ *
+ * Time : O(h) per insert (h = height) | Space : O(h)
+ */
 package BinarySearchTree;
 
 public class BuiltBST {

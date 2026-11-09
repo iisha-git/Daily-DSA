@@ -1,3 +1,15 @@
+/*
+ * Problem : Invert / Mirror Binary Tree
+ * LeetCode: https://leetcode.com/problems/invert-binary-tree/
+ * GFG     : https://www.geeksforgeeks.org/create-a-mirror-tree-from-the-given-binary-tree/
+ *
+ * Approach:
+ * Recursively mirror the left and right subtrees, then swap the left and right
+ * pointers of the current node. Doing this for every node produces the mirror
+ * image of the tree.
+ *
+ * Time : O(n) | Space : O(h)
+ */
 package BinarySearchTree;
 
 public class reverseTree {

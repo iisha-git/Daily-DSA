@@ -1,3 +1,14 @@
+/*
+ * Problem : Interleave the first half of the queue with the second half
+ * GFG     : https://www.geeksforgeeks.org/interleave-first-half-queue-second-half/
+ *
+ * Approach:
+ * 1. Move the first half of the queue into a temporary queue.
+ * 2. Repeatedly take one element from the temporary queue and one from the
+ *    remaining second half, adding both back to the original queue in order.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 package Queue;
 import java.util.*;
 

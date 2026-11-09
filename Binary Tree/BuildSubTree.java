@@ -1,3 +1,18 @@
+/*
+ * Problem : Build a Binary Tree from a preorder array (with null markers) and
+ *           perform preorder / inorder / postorder / level order traversals
+ * GFG     : https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+ * GFG     : https://www.geeksforgeeks.org/construct-binary-tree-from-string-with-bracket-representation/
+ *
+ * Approach:
+ * - buildTree: the array is a preorder traversal where -1 marks a null node.
+ *   Read the current value, create the node, then recursively build the left and
+ *   right subtrees.
+ * - preorder / inorder / postorder: standard recursive DFS traversals.
+ * - levelOrder: BFS using a Queue; a null marker separates the levels.
+ *
+ * Time : O(n) | Space : O(n)
+ */
 import java.util.*;
 
 public class BuildSubTree {

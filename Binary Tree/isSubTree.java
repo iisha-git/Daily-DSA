@@ -1,3 +1,17 @@
+/*
+ * Problem : Subtree of Another Tree
+ * LeetCode: https://leetcode.com/problems/subtree-of-another-tree/
+ * GFG     : https://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
+ *
+ * Approach:
+ * - isIdentical: two trees are identical if both are null, or their values match
+ *   and their left and right subtrees are identical.
+ * - isSubtree: for every node of the main tree whose value equals subRoot's value,
+ *   run isIdentical. Return true if any match is identical, or if the subtree is
+ *   found in the left or right child.
+ *
+ * Time : O(n * m) worst case | Space : O(h)
+ */
 public class isSubTree {
     static class Node{
         int data;

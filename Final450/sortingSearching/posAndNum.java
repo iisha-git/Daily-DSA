@@ -1,3 +1,13 @@
+/*
+ * Problem : Value equal to index value (1-based index)
+ * GFG     : https://www.geeksforgeeks.org/find-a-fixed-point-in-a-given-array/
+ *
+ * Approach:
+ * Traverse the array and collect every element arr[i] that equals i + 1, since
+ * the problem uses 1-based indexing. Return the collected values.
+ *
+ * Time : O(n) | Space : O(k)
+ */
 package Final450.sortingSearching;
 import java.util.*;
 
