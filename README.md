@@ -69,6 +69,7 @@ explains the approach in detail.
 | --- | --- |
 | [findPair.java](./Final450/sortingSearching/findPair.java) | [Pair with given difference](https://www.geeksforgeeks.org/find-a-pair-with-given-difference/) |
 | [findTwoElement.java](./Final450/sortingSearching/findTwoElement.java) | [Missing and repeating number](https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/) |
+| [fourSum.java](./Final450/sortingSearching/fourSum.java) | [4Sum (brute force)](https://leetcode.com/problems/4sum/) |
 | [firstLast.java](./Final450/sortingSearching/firstLast.java) | [First and last occurrence](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
 | [majorityElement.java](./Final450/sortingSearching/majorityElement.java) | [Majority Element](https://leetcode.com/problems/majority-element/) |
 | [posAndNum.java](./Final450/sortingSearching/posAndNum.java) | [Value equal to index](https://www.geeksforgeeks.org/find-a-fixed-point-in-a-given-array/) |
